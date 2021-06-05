@@ -1,8 +1,16 @@
 'use strict'
 
-const switcher = document.querySelector('.btnToDark');
+const switcher = document.querySelector('.btn');
 
-switcher.addEventListener('click', function() {
+const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+    document.body.classList.toggle('dark-theme');
+    //localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark-theme' : 'light-theme')
+    localStorage.setItem('toggleState', "true");
+});
+
+/*switcher.addEventListener('click', function() {
     document.body.classList.toggle('dark-theme')
     localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark-theme' : 'light-theme')
 
@@ -14,10 +22,18 @@ switcher.addEventListener('click', function() {
     }
 
     console.log('current class name: ' + className);
-});
+});*/
 
 if (localStorage.getItem('theme') === 'dark-theme') {
     document.body.classList.add('dark-theme');
     switcher.textContent = "Light Mode";
+    // document.body.classList.toggle('dark-theme');
+
+
+}
+
+var tState = localStorage.getItem('toggleState');
+if (tState == true) {
+    document.body.classList.toggle('dark-theme');
 
 }
