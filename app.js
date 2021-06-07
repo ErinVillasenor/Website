@@ -6,16 +6,9 @@ const chk = document.getElementById('chk');
 
 chk.addEventListener('change', () => {
     document.body.classList.toggle('dark-theme');
-    localStorage.setItem('toggleState', "true");
+    localStorage.setItem('theme', "dark-theme");
 });
 
 if (localStorage.getItem('theme') === 'dark-theme') {
-    document.body.classList.add('dark-theme');
-    switcher.textContent = "Light Mode";
-}
-
-var tState = localStorage.getItem('toggleState');
-if (tState == true) {
     document.body.classList.toggle('dark-theme');
-
 }
