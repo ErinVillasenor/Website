@@ -1,14 +1,3 @@
-@media (prefers-color-scheme: dark) {
-    body {
-        --bg: var(--nightmodeblack);
-        --fontColor: var(--nightmodeblue);
-        --btnBg: var(--white);
-        --btnFontColor: var(--nightmodeblack);
-        --navBarActiveColor: var(--nightmodepurple);
-        --iconColor: var(--nightmodeblue);
-    }
-}
-
 :root {
     --eggshell: #DDA;
     --green: #00FF00;
