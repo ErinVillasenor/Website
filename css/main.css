@@ -16,7 +16,55 @@
 
 body {
     background: var(--bg);
+    background-image: var(--bgImg);
 }
+
+.textbox {
+    background: var(--bg);
+    border-radius: 10px;
+    opacity: .8;
+}
+
+footer {
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/*Background image */
+
+
+/*
+.bg-container {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #000;
+    position: relative;
+}
+
+.bg-container .content {
+    position: absolute;
+    z-index: 999;
+    text-align: center;
+    width: 100%;
+}
+
+.bg-container::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -99;
+    background-image: var(--bgImg);
+    background-size: ;
+    opacity: 0.4;
+}
+
+
+/*Background image end*/
 
 ul {
     font-family: helvetica;
@@ -31,6 +79,33 @@ li {
 }
 
 
+/*Contact Info Obfuscation*/
+
+span.tumnus {
+    unicode-bidi: bidi-override;
+    direction: rtl
+}
+
+span.tumnus.bitter:before {
+    content: "moc.liam"
+}
+
+span.tumnus.bitter:after {
+    content: "@ronesallivnire :liamE"
+}
+
+span.tumnus.fruity:before {
+    content: "2363 722 "
+}
+
+span.tumnus.fruity:after {
+    content: " 1+ :rebmun enohP"
+}
+
+
+/*End Contact Info*/
+
+
 /*#msg {
     font-family: monospace;
 }*/
@@ -40,6 +115,7 @@ li {
 
 .light-theme {
     --bg: var(var(--eggshell));
+    --bgImg: url(../images/osuKelley40.jpg);
     --fontColor: var(--black);
     --btnBg: var(--black);
     --btnFontColor: var(--white);
@@ -49,6 +125,7 @@ li {
 
 .dark-theme {
     --bg: var(--nightmodeblack);
+    --bgImg: url(../images/osuAtNight.jpg);
     --fontColor: var(--nightmodeblue);
     --btnBg: var(--white);
     --btnFontColor: var(--nightmodeblack);
@@ -189,3 +266,56 @@ li {
 
 
 /*Nav Bar ends here*/
+
+
+/*Carousel Start*/
+
+#carousel {
+    overflow: hidden;
+}
+
+#carousel figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s carousel infinite;
+}
+
+#carousel figure img {
+    width: 20%;
+    float: left;
+}
+
+@keyframes carousel {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+
+/*Carousel End*/
