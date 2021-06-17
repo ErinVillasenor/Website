@@ -45,7 +45,7 @@
 
     <footer>
         <div class="textbox">
-            <p>Photos taken from:<br>
+            <p>Photo credit:<br>
                 <p>https://www.opsisarch.com/project/oregon-state-university-student-experience-center/</p>
                 <p>https://www.ygh.com/work-osukec</p>
             </p>
