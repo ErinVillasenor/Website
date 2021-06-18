@@ -94,7 +94,7 @@ span.tumnus.fruity:after {
 
 .light-theme {
     --bg: var(var(--eggshell));
-    --bgImg: url(/images/osuKelley40.jpg);
+    --bgImg: url(../images/osuKelley40.jpg);
     --fontColor: var(--black);
     --btnBg: var(--black);
     --btnFontColor: var(--white);
@@ -104,7 +104,7 @@ span.tumnus.fruity:after {
 
 .dark-theme {
     --bg: var(--nightmodeblack);
-    --bgImg: url(/images/osuAtNight.jpg);
+    --bgImg: url(../images/osuAtNight.jpg);
     --fontColor: var(--nightmodeblue);
     --btnBg: var(--white);
     --btnFontColor: var(--nightmodeblack);
