@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <title>About</title>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
     <script src="https://kit.fontawesome.com/726049509b.js" crossorigin="anonymous"></script>
-
+    <script src>
+        document.addEventListener('DOMContentLoaded', function() {
+            new Splide('.splide').mount();
+        });
+    </script>
 </head>
 
 <body class="light-theme">
@@ -36,7 +41,15 @@
         <script src="../app.js"></script>
         <noscript>You need to enable JavaScript to view the full site.</noscript>
     </div>
-
+    <div id="image-slider" class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide"> <img src="../images/ErinMug.jpg" alt="A picture of Erin holding a mug"> Slide 01</li>
+                <li class="splide__slide"> <img src="../images/erinFamily.jpg" alt="Erin and his family at the plaza"> Slide 02</li>
+                <li class="splide__slide"> <img src="../images/erinDnd.jpg" alt="Erin with his Dungeons and Dragons group"> Slide 03</li>
+            </ul>
+        </div>
+    </div>
     <div id="carousel">
         <figure>
             <img src="../images/ErinMug.jpg" alt="A picture of Erin holding a mug">
